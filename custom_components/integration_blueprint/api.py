@@ -28,6 +28,11 @@ class IntegrationBlueprintApiClient:
         url = "https://jsonplaceholder.typicode.com/posts/1"
         return await self.api_wrapper("get", url)
 
+    async def getCurrentWattHours(self) -> str:
+        url = "http://owl.local/owl/owl_live.php"
+        bod = await self.api_wrapper("get", url)
+        return bod.split()[0]
+
     async def async_set_title(self, value: str) -> None:
         """Get data from the API."""
         url = "https://jsonplaceholder.typicode.com/posts/1"
@@ -41,7 +46,7 @@ class IntegrationBlueprintApiClient:
             async with async_timeout.timeout(TIMEOUT):
                 if method == "get":
                     response = await self._session.get(url, headers=headers)
-                    return await response.json()
+                    return await response.text()
 
                 elif method == "put":
                     await self._session.put(url, headers=headers, json=data)
