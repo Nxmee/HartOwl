@@ -1,11 +1,11 @@
 {
   "domain": "integration_blueprint",
-  "name": "Hart Owl",
-  "documentation": "https://github.com/custom-components/integration_blueprint",
+  "name": "Intergration Blueprint",
+  "documentation": "https://github.com/AndrewAubury/HartOwl",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/custom-components/integration_blueprint/issues",
+  "issue_tracker": "https://github.com/AndrewAubury/HartOwl/issues",
   "version": "0.0.0",
-  "config_flow": false,
+  "config_flow": true,
   "codeowners": [
     "@AndrewAubury"
   ]

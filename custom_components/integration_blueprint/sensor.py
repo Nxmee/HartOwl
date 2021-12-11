@@ -20,7 +20,7 @@ class IntegrationBlueprintSensor(IntegrationBlueprintEntity):
     @property
     def state(self):
         """Return the state of the sensor."""
-        return str(self.coordinator.data) + " Wh"
+        return self.coordinator.data
 
     @property
     def icon(self):
@@ -29,3 +29,6 @@ class IntegrationBlueprintSensor(IntegrationBlueprintEntity):
     @property
     def device_class(self):
         return "energy"
+    @property
+    def native_unit_of_measurement(self):
+        return "Wh"

@@ -24,9 +24,9 @@ class IntegrationBlueprintApiClient:
         self._session = session
 
     async def async_get_data(self) -> dict:
-        """Get data from the API."""
-        url = "https://jsonplaceholder.typicode.com/posts/1"
-        return await self.api_wrapper("get", url)
+        url = "http://owl.local/owl/owl_live.php"
+        bod = await self.api_wrapper("get", url)
+        return {"body": bod.split()[0]}
 
     async def getCurrentWattHours(self) -> str:
         url = "http://owl.local/owl/owl_live.php"
