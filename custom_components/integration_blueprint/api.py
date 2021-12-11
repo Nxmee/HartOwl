@@ -24,12 +24,12 @@ class IntegrationBlueprintApiClient:
         self._session = session
 
     async def async_get_data(self) -> dict:
-        url = "http://owl.local/owl/owl_live.php"
+        url = "http://192.168.75.4/owl/owl_live.php"
         bod = await self.api_wrapper("get", url)
         return {"body": bod.split()[0]}
 
     async def getCurrentWattHours(self) -> str:
-        url = "http://owl.local/owl/owl_live.php"
+        url = "http://192.168.75.4/owl/owl_live.php"
         bod = await self.api_wrapper("get", url)
         return bod.split()[0]
 
