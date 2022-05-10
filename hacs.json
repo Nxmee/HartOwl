@@ -1,5 +1,5 @@
 {
-    "name": "Hart Owl",
+    "name": "Hart Owl Sensor",
     "hacs": "1.6.0",
     "domains": [
         "sensor"
