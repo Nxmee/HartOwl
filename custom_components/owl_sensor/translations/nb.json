@@ -2,7 +2,7 @@
     "config": {
         "step": {
             "user": {
-                "title": "Blueprint",
+                "title": "OWL Sensor",
                 "description": "Hvis du trenger hjep til konfigurasjon ta en titt her: https://github.com/custom-components/integration_blueprint",
                 "data": {
                     "username": "Brukernavn",

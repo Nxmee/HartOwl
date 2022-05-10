@@ -1,0 +1,13 @@
+{
+  "domain": "owl_sensor",
+  "name": "OWL Sensor",
+  "documentation": "https://github.com/Nxmee/HartOwl",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/Nxmee/HartOwl/issues",
+  "version": "0.0.0",
+  "config_flow": true,
+  "codeowners": [
+    "@AndrewAubury",
+    "@Nxmee"
+  ]
+}
